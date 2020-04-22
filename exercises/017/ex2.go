@@ -8,5 +8,6 @@ func main() {
 	for _, v := range x {
 		fmt.Println(v)
 	}
-	fmt.Printf("%T\n", x)
+	y := x[1:5]
+	fmt.Println(y)
 }
