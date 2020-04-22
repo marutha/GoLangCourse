@@ -10,4 +10,6 @@ func main() {
 	}
 	y := x[1:5]
 	fmt.Println(y)
+	fmt.Println(x[:5])
+	fmt.Println(x[5:])
 }
