@@ -19,6 +19,13 @@ func main() {
 		last:      "last2",
 		favourite: []string{"vanilla2", "chocolate"},
 	}
-	fmt.Println(x)
+	fmt.Println(x.first)
+	fmt.Println(x.last)
+	for i, v := range x.favourite {
+		fmt.Println(i, v)
+	}
 	fmt.Println(y)
+	for i, v := range y.favourite {
+		fmt.Println(i, v)
+	}
 }
