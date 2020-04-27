@@ -18,4 +18,7 @@ func main() {
 			fav: []string{"vodka", "beer"},
 		}
 	fmt.Println(s)
+	for k, v := range s.friends {
+		fmt.Println(k, v)
+	}
 }
