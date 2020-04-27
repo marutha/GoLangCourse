@@ -4,11 +4,13 @@ import "fmt"
 
 func main() {
 	x := foo()
-	x()
+	y := x()
+	fmt.Println(y)
 }
 
-func foo() func() {
-	return func() {
+func foo() func() int {
+	return func() int {
 		fmt.Println("Hello")
+		return 456
 	}
 }
